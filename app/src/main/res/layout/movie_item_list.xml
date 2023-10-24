@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/movie_item"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie Title"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/img_movie"
+            android:scaleType="fitCenter"
+            android:src="@drawable/poster_placeholder"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Release date: "/>
+                <TextView
+                    android:id="@+id/tv_date1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#F44336"
+                    android:text="2000-01-01"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_rate_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rating: "/>
+
+                <TextView
+                    android:id="@+id/tv_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_rate_title"
+                    android:text="10/10"
+                    android:textColor="#F44336"/>
+
+                <ImageView
+                    android:id="@+id/img_adult"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_toLeftOf="@+id/img_favourite"
+                    android:src="@drawable/ic_baseline_no_adult_content_24" />
+
+                <ImageButton
+                    android:id="@+id/img_favourite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:src="@drawable/ic_baseline_favorite_border_24" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overview:"
+                android:textColor="#F44336"/>
+            <TextView
+                android:id="@+id/tv_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text="Overview overview overview overview overview overview overview overview overview overview overview overview overview overview overview overview"
+                android:maxLines="3"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

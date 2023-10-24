@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="FILTER">
+        <ListPreference
+            android:dialogTitle="Category"
+            android:entries="@array/category_entries"
+            android:entryValues="@array/category_values"
+            android:key="category"
+            android:defaultValue="popular"
+            android:title="Category"
+            app:useSimpleSummaryProvider="true"
+            />
+        <EditTextPreference
+            android:dialogTitle="Enter a rate"
+            android:key="rate"
+            android:defaultValue="5"
+            android:title="Movie with rate from"
+            app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+            android:dialogTitle="Enter a year"
+            android:key="release"
+            android:defaultValue="2015"
+            android:title="From release year"
+            app:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="SORT">
+        <ListPreference
+            android:dialogTitle="Sort by"
+            android:entries="@array/sort_entries"
+            android:entryValues="@array/sort_values"
+            android:key="sort"
+            android:defaultValue="default"
+            android:title="Sort By"
+            app:useSimpleSummaryProvider="true"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

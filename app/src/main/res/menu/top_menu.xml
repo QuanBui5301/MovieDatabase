@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/viewtype" android:icon="@drawable/ic_baseline_format_list_bulleted_24" android:title="View" app:showAsAction="always"/>
+    <item android:id="@+id/list" android:title="List" android:icon="@drawable/ic_baseline_more_vert_24" app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/movies" android:title="Movies" app:showAsAction="never"/>
+            <item android:id="@+id/favourite" android:title="Favourite" app:showAsAction="never"/>
+            <item android:id="@+id/settings" android:title="Settings" app:showAsAction="never"/>
+            <item android:id="@+id/about" android:title="About" app:showAsAction="never"/>
+        </menu>
+    </item>
+</menu>
